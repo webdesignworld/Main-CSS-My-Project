@@ -1,0 +1,13 @@
+:root{
+--hero-footer-background:#1F2937;
+--call-to-action-button-color:#3882F6;
+--quote-background: #e5E7EB;
+--hero-main-header-logo-color:#F9FAF8;
+--information-quote-text-color:#1F2937;        
+}
+
+@font-face{
+font-family: LuckiestGuy-Regular;
+src: url(fonts/LuckiestGuy-Regular.ttf)
+}
+
