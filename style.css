@@ -1,15 +1,112 @@
 :root{
 --hero-footer-background:#1F2937;
 --call-to-action-button-color:#3882F6;
---quote-background: #e5E7EB;
+--quote-background: #E5E7EB;
 --hero-main-header-logo-color:#F9FAF8;
 --information-quote-text-color:#1F2937;        
 }
 
 @font-face{
-font-family: LuckiestGuy-Regular;
+font-family: LuckiestGuy-Regular;sans-serif;
 src: url(fonts/LuckiestGuy-Regular.ttf)
 }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.menu li{
+    list-style: none;
+    color: #E5E7EB;
+    font-size: 18px;
+   }
+
+
+.header-container {
+    width: auto;
+    background-color: var(--hero-footer-background);
+}
+
+.logo{
+font-size: 24px;
+color: #F9FAF8;
+}
+
+nav a{
+    text-decoration: none;
+    
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.hero-information{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+h1 {
+color: #F9FAF8;
+font-size: 3em;
+font-weight:800;
+font-family:LuckiestGuy-Regular;sans-serif;
+}
+
+.header-container {
+    height:60vh;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.sign-up{
+    background-color: var(--call-to-action-button-color);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+
+h2{
+    display:flex;
+    flex-direction: row;
+   justify-content: center;
+}
+
+ .illustrations{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+
+.illustration-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+
+li{
+    list-style: none;
+}
+
 
 blockquote p {
         padding: 15px;
