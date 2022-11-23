@@ -1,3 +1,4 @@
+
 :root{
 --hero-footer-background:#1F2937;
 --call-to-action-button-color:#3882F6;
@@ -17,6 +18,7 @@ nav {
     flex-wrap: nowrap;
     justify-content: space-evenly;
 }
+
 
 .menu {
     display: flex;
@@ -87,19 +89,31 @@ h2{
    justify-content: center;
 }
 
- .illustrations{
+ .illustrations ul {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
    
 }
 
-.illustration-text{
+
+
+  .illustrations p{
+    border: 2px solid blue;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+
+}
+
+
+.illustration-text {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    
+    flex-wrap: nowrap;
+    justify-content: center;
+
 }
 
 
@@ -108,18 +122,59 @@ li{
 }
 
 
-blockquote p {
-        padding: 15px;
-        background: #eee;
-        border-radius: 5px;
+blockquote  {
+    display: block;
+        padding: 50px;
+        background: #E5E7EB;
+        height: 60vh;
+        width: auto;
+        font-size:36px;
+        text-align: center;
+        font-style: italic;
+        color: #1F2937;
     }
-    
-    blockquote p::before {
-        content: '\201C';
-    }
-    
-    blockquote p::after {
-        content: '\201D';
-    }
-    
 
+
+.call-to-action{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: space-evenly;
+
+}
+
+.call-to-action-container{
+    background-color: #3882F6;
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 30px 200px;
+    margin-left: 15%;
+    border-radius: 10px;
+   }
+   
+
+ .sign-up-action {
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px 30px;
+margin-top: 35px;
+background-color: var(--call-to-action-button-color)
+}
+
+a .sign-up-action{
+    color: #F9FAF8;
+}
+
+
+.footer-section{
+    background-color: #1F2937;
+    padding: 30px;
+
+}
+
+ .footer-section p{
+    text-align: center;
+    color: #E5E7EB;
+}
