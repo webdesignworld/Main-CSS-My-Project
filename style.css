@@ -3,8 +3,9 @@
 --hero-footer-background:#1F2937;
 --call-to-action-button-color:#3882F6;
 --quote-background: #E5E7EB;
+--links-menu-header: #E5E7EB;
 --hero-main-header-logo-color:#F9FAF8;
---information-quote-text-color:#1F2937;        
+--information-quote-text-color:#1F2937;       
 }
 
 @font-face{
@@ -12,8 +13,10 @@ font-family: LuckiestGuy-Regular;sans-serif;
 src: url(fonts/LuckiestGuy-Regular.ttf)
 }
 
+
 body{
     margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 li{
@@ -26,8 +29,7 @@ li{
     justify-content: space-around;
     width: auto;
     height:13vh;
-    background-color: var(--hero-footer-background);
-   
+    background-color: var(--hero-footer-background);   
  }
 
 .logo {
@@ -35,7 +37,7 @@ li{
     padding: 10px;
     margin-left: -20px;
     font-size: 24px;
-    color: #F9FAF8;
+    color: var(--hero-main-header-logo-color);
     }
 
  .menu {
@@ -61,7 +63,7 @@ li{
     flex-wrap: nowrap;
     justify-content: center;
     width: auto;
-    height:50vh;
+    height:70vh;
     background-color: var(--hero-footer-background);
          }
 
@@ -72,45 +74,43 @@ li{
 
 
  .hero-text h1 {
-color: #F9FAF8;
-font-size: 3em;
-font-weight:800;
-font-family:LuckiestGuy-Regular;sans-serif;
+    color: var(--hero-main-header-logo-color);
+    font-size: 3em;
+    font-weight:800; /*Extra Bold (Ultra Bold)*/
+/* font-family:LuckiestGuy-Regular;sans-serif; */
 } 
 
 .hero-text p {
-    color: #F9FAF8;
-    font-weight:800;
-    font-family:LuckiestGuy-Regular;sans-serif;
+    color: var(--links-menu-header); /* #E5E7EB */
+    /* font-family:LuckiestGuy-Regular;sans-serif; */
     } 
 
     .hero-image{
-        margin-left: 110px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-         }
-
+    margin-left: 110px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+     }
 
 .sign-up{
     background-color: var(--call-to-action-button-color);
-    padding: 5px 10px;
+    color: white;
+    padding: 5px 20px;
     border-radius: 8px;
+    font-weight: bold;
+    }
+
+.info{
+    text-align: center;
+    font-weight: 36px;
+    font-weight:800; /*Extra Bold (Ultra Bold)*/
+    color: #1F2937;
 }
-
-
-h2{
-    display:flex;
-    flex-direction: row;
-   justify-content: center;
-}
-
 
 .illustrations-container{
     display:flex;
     flex-direction: row;
-   justify-content: center;
-
+    justify-content: center;
 }
 
  .illustrations ul {
@@ -118,7 +118,6 @@ h2{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    
 }
 
   .illustrations p{
@@ -144,43 +143,64 @@ h2{
 
 blockquote  {
     margin: 20px -40px;
-        padding: 100px;
-        background: #E5E7EB;
-        height: 30vh;
-        width: auto;
-        font-size:36px;
-        text-align: center;
-        font-style: italic;
-        color: #1F2937;
+    padding: 100px;
+    background: #E5E7EB;
+    height: 30vh;
+    width: auto;
+    font-size:36px;
+    text-align: center;
+    font-style: italic;
+    color: #1F2937;
     }
 
 
-.call-to-action{
-display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
-justify-content: space-evenly;
+    blockquote p{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1F2937;
+            }
+
+figcaption{
+    margin-left: 40%;
+    font-style: normal;
 }
+
+
+.call-to-action h3{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: center;
+   color: #E5E7EB;
+}
+
+.call-to-action p{
+    margin-top: -20px;
+    color: #E5E7EB;
+
+}
+
 
 .call-to-action-container{
     background-color: #3882F6;
-    display:inline-flex;
+    display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-around;
     padding: 30px 50px;
-    margin-left: 30%;
-     border-radius: 10px;
-   }
-   
+    margin-left: 10%;
+    border-radius: 10px;
+     width: 70vw;; */
+   }   
 
  .sign-up-action {
     border: 2px solid white;
     border-radius: 5px;
     padding: 5px 30px;
-margin-top: 35px;
-background-color: var(--call-to-action-button-color)
-}
+    margin-top: 30px;
+    background-color: var(--call-to-action-button-color);
+   }
 
 a .sign-up-action{
     color: #F9FAF8;
@@ -188,7 +208,7 @@ a .sign-up-action{
 
 
 .footer-section{
-    background-color: #1F2937;
+    background-color: var(--hero-footer-background);
     padding: 30px;
 
 }
