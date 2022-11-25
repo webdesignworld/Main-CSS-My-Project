@@ -40,6 +40,15 @@ li{
     color: var(--hero-main-header-logo-color);
     }
 
+   .memory{
+    height: 85px;
+    margin: 5px;
+    background-color: #3882F6;
+    border: solid 2px;
+    border-radius: 10%;
+       }
+
+
  .menu {
     display: flex;
     flex-direction: row;
@@ -92,6 +101,10 @@ li{
     flex-direction: column;
      }
 
+     .hero-image img{
+        width: 400px;
+     }
+
 .sign-up{
     background-color: var(--call-to-action-button-color);
     color: white;
@@ -99,6 +112,17 @@ li{
     border-radius: 8px;
     font-weight: bold;
     }
+
+    .sign-up-my-page{
+        background-color: var(--call-to-action-button-color);
+        color: white;
+        padding: 15px 30px;
+        border-radius: 8px;
+        font-weight: bold;
+        margin-left: 20px;
+        }
+
+
 
 .info{
     text-align: center;
@@ -215,5 +239,22 @@ a .sign-up-action{
 
  .footer-section p{
     text-align: center;
+    color: #E5E7EB;
+}
+
+
+.sign-up-action-my{
+    background-color: var(--call-to-action-button-color);
+    color: black;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    /* margin-left: 20px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.copyright{ 
+    text-decoration: none;
     color: #E5E7EB;
 }
