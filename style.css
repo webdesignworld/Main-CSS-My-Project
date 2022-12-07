@@ -34,19 +34,10 @@ li{
 
 .logo {
     text-decoration: none;
-    /* padding: 10px;
-    margin-left: -20px; */
+    margin-top: -12px;
     font-size: 24px;
     color: var(--hero-main-header-logo-color);
     }
-
-   .memory{
-    height: 85px;
-    margin: 5px;
-    background-color: #3882F6;
-    border: solid 2px;
-    border-radius: 10%;
-       }
 
 
  .menu {
@@ -62,7 +53,8 @@ li{
     text-decoration: none;
     color: #E5E7EB;
     font-size: 18px;
-    padding: 0px 20px;
+    padding: 0px 10px;
+    margin-left: 80px;
    }
 
 
@@ -70,7 +62,7 @@ li{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-around;
     width: auto;
     height:70vh;
     background-color: var(--hero-footer-background);
@@ -79,6 +71,8 @@ li{
  .hero-text{
     display: flex;
     flex-direction: column;
+    margin: 5px;
+    /* padding-right: 60px; */
        }
 
 
@@ -94,32 +88,33 @@ li{
     /* font-family:LuckiestGuy-Regular;sans-serif; */
     } 
 
-    .hero-image{
-    margin-left: 110px;
+.hero-image{
+    margin-left: -200px;
+    margin-top: 50px;
     padding: 20px;
     display: flex;
     flex-direction: column;
      }
 
-     .hero-image img{
-        width: 400px;
+.hero-image img{
+    width: 400px;
      }
 
 .sign-up{
     background-color: var(--call-to-action-button-color);
     color: white;
-    padding: 5px 20px;
+    padding: 7px 20px;
     border-radius: 8px;
     font-weight: bold;
     }
 
-    .sign-up-my-page{
-        background-color: var(--call-to-action-button-color);
-        color: white;
-        padding: 15px 30px;
-        border-radius: 8px;
-        font-weight: bold;
-        margin-left: 20px;
+.sign-up-my-page{
+    background-color: var(--call-to-action-button-color);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-left: 20px;
         }
 
 
@@ -137,33 +132,16 @@ li{
     justify-content: center;
 }
 
- .illustrations ul {
+ .illustrations {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
 }
 
-  .illustrations p{
-    border: 2px solid blue;
-    border-radius: 5px;
-    width: 100px;
-    height: 100px;
-    margin:15px;
-}
-
-
-.illustration-text li {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    width: 100px;
-    height: auto;
-    margin:-10px 15px;  
-    list-style: none;
-}
-
+  .illustrations-text {
+    text-align: center;
+ }
 
 blockquote  {
     margin: 20px -40px;
@@ -178,18 +156,16 @@ blockquote  {
     }
 
 
-    blockquote p{
+blockquote p{
     font-size: 36px;
     font-style: italic;
     font-weight: 100;
     color: #1F2937;
             }
 
-figcaption{
+blockquote cite {
     margin-left: 40%;
-    font-style: normal;
-}
-
+    }      
 
 .call-to-action h3{
    display: flex;
@@ -202,7 +178,6 @@ figcaption{
 .call-to-action p{
     margin-top: -20px;
     color: #E5E7EB;
-
 }
 
 
@@ -214,6 +189,7 @@ figcaption{
     justify-content: space-around;
     padding: 30px 50px;
     margin-left: 10%;
+    margin-bottom: 20px;;
     border-radius: 10px;
      width: 70vw;; */
    }   
@@ -249,7 +225,6 @@ a .sign-up-action{
     padding: 15px 30px;
     border-radius: 8px;
     font-weight: bold;
-    /* margin-left: 20px; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
